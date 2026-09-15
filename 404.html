@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сторінку не знайдено — Petale</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#fdf6f2">
+<!-- Шляхи починаються з «/», щоб сторінка працювала на будь-якій неіснуючій адресі сайту -->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0; padding:0; box-sizing:border-box;}
+  html, body{height:100%;}
+  body{
+    font-family:'Manrope', system-ui, sans-serif; color:#2c2024;
+    display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
+    background:
+      radial-gradient(ellipse 800px 500px at 85% 5%, rgba(236,211,164,.4), transparent 60%),
+      radial-gradient(ellipse 800px 600px at 0% 100%, rgba(236,197,192,.6), transparent 60%),
+      #fdf6f2;
+  }
+  /* хмари у фіксованому шарі з обрізанням — не розширюють сторінку на телефоні */
+  .sky{position:fixed; inset:0; z-index:1; overflow:hidden; pointer-events:none;}
+  .bank{position:absolute; left:-10vw; bottom:-8vw; width:120vw; max-width:none; height:auto;}
+  .cloud{position:absolute; right:-8vw; top:-4vw; width:36vw; max-width:none; height:auto; transform:scaleX(-1);}
+  main{position:relative; z-index:2; max-width:560px;}
+  .num{font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:500; font-size:clamp(96px, 20vw, 170px); line-height:.9; color:#c89a5b;}
+  h1{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:clamp(32px, 5vw, 46px); line-height:1.1; color:#3c1f2c; margin:10px 0 14px;}
+  p{font-size:16px; line-height:1.65; color:#6f5660; margin-bottom:30px;}
+  .btn{display:inline-block; padding:16px 32px; border-radius:999px; font-weight:700; color:#fff; text-decoration:none; background:linear-gradient(135deg, #6b3a52, #3c1f2c); box-shadow:0 18px 38px -16px rgba(60,31,44,.7); transition:transform .3s ease;}
+  .btn:hover{transform:translateY(-3px);}
+  @media (max-width:600px){ .bank{width:190vw; left:-45vw; bottom:-14vw;} .cloud{width:70vw;} }
+</style>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <img class="cloud" src="/images/cloud-a.webp" width="1100" height="616" alt="">
+    <img class="bank" src="/images/cloud-bank-2.webp" width="1800" height="518" alt="">
+  </div>
+  <main>
+    <div class="num">404</div>
+    <h1>Ця сторінка загубилась у хмарах</h1>
+    <p>Можливо, посилання застаріло або в адресі є помилка. Повертайтеся на головну — там на вас чекають ніжні нігті й ароматна кава.</p>
+    <a class="btn" href="/">На головну</a>
+  </main>
+</body>
+</html>
