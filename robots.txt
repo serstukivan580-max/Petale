@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Якщо зміниш домен — онови адресу нижче
-Sitemap: https://petale-eight.vercel.app/sitemap.xml
+Sitemap: https://petale-swart.vercel.app/sitemap.xml
