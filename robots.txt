@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# TODO: заміни YOUR-DOMAIN.com.ua на справжній домен
-Sitemap: https://YOUR-DOMAIN.com.ua/sitemap.xml
+# Якщо зміниш домен — онови адресу нижче
+Sitemap: https://petale-eight.vercel.app/sitemap.xml
